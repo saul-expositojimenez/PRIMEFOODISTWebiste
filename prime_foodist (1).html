@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Foodist — Pedir comida, simplemente.</title>
+    <!-- Importar Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        leaf: 'oklch(0.62 0.13 150)',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+            letter-spacing: -0.01em;
+        }
+        /* Ajuste para que las imágenes de Drive carguen correctamente */
+        .img-contain { object-fit: contain; }
+    </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased">
+
+    <!-- Nav -->
+    <header class="max-w-6xl mx-auto px-6 md:px-10 py-8 flex items-center justify-between">
+        <div class="flex items-center gap-3 text-sm tracking-[0.2em] uppercase font-extralight">
+            <!-- LOGO SOLICITADO -->
+            <img src="https://lh3.googleusercontent.com/d/14i6nHz3QhwcJXpfDAPT2Z4VP2Yv5t5Ff" alt="Prime Foodist Logo" class="h-8 w-auto">
+            <span>Prime Foodist</span>
+        </div>
+        <nav class="hidden md:flex gap-10 text-sm font-extralight text-neutral-500">
+            <a href="#about" class="hover:text-neutral-900 transition">Sobre</a>
+            <a href="#process" class="hover:text-neutral-900 transition">Proceso</a>
+            <a href="#features" class="hover:text-neutral-900 transition">Características</a>
+            <a href="#tech" class="hover:text-neutral-900 transition">Tecnología</a>
+        </nav>
+        <a href="#download" class="text-sm font-light px-5 py-2 rounded-full border border-neutral-200 hover:border-neutral-900 transition">
+            Descargar
+        </a>
+    </header>
+
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto px-6 md:px-10 pt-12 md:pt-24 pb-20 md:pb-32 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl leading-[1.05] font-thin tracking-tight">
+                    Pedir comida,<br>
+                    <span class="text-leaf">simplemente.</span>
+                </h1>
+                <p class="mt-8 max-w-md text-lg font-extralight text-neutral-500 leading-relaxed">
+                    Prime Foodist es una app móvil que facilita la búsqueda y el pedido de comida
+                    de forma rápida, clara y cómoda. Diseñada para adaptarse a tu ritmo de vida.
+                </p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#download" class="px-7 py-3 rounded-full bg-neutral-900 text-white text-sm font-light hover:bg-neutral-700 transition">
+                        Descubrir la app
+                    </a>
+                    <a href="#features" class="px-7 py-3 rounded-full text-sm font-light text-neutral-700 hover:text-neutral-900 transition">
+                        Saber más →
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <!-- IMAGEN APP SOLICITADA -->
+                <img src="https://lh3.googleusercontent.com/d/1TEBnXO_EycRN7RnIHGUm2vsEALXd3hVR" alt="Prime Foodist App" class="w-full max-w-[320px] md:max-w-[400px] drop-shadow-2xl">
+            </div>
+        </section>
+
+        <!-- Investigación / Contexto -->
+        <section id="about" class="border-t border-neutral-100">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="text-3xl md:text-4xl font-thin leading-tight tracking-tight">
+                        Un sector en<br>crecimiento constante.
+                    </h2>
+                </div>
+                <div class="md:col-span-8 space-y-10">
+                    <p class="text-lg font-extralight text-neutral-500 leading-relaxed max-w-xl">
+                        La hostelería representa una parte esencial de nuestra cultura. Analizamos las mejores plataformas para crear una experiencia que combine confianza, velocidad y sencillez.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-neutral-100">
+                        <div>
+                            <p class="text-2xl font-thin">Uber Eats</p>
+                            <p class="text-xs font-light text-neutral-400 mt-2 tracking-wide">Recomendaciones</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-thin">TheFork</p>
+                            <p class="text-xs font-light text-neutral-400 mt-2 tracking-wide">Reservas</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-thin">Tripadvisor</p>
+                            <p class="text-xs font-light text-neutral-400 mt-2 tracking-wide">Reseñas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section id="process" class="bg-neutral-50 py-24 md:py-32">
+            <div class="max-w-6xl mx-auto px-6 md:px-10">
+                <div class="grid md:grid-cols-3 gap-16">
+                    <div class="text-center">
+                        <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mx-auto mb-6 text-sm font-light">1</div>
+                        <h3 class="text-xl font-light mb-4">Busca</h3>
+                        <p class="text-sm text-neutral-500 font-extralight leading-relaxed">Filtra por tipo de cocina, cercanía o valoración real de otros usuarios.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mx-auto mb-6 text-sm font-light">2</div>
+                        <h3 class="text-xl font-light mb-4">Disfruta</h3>
+                        <p class="text-sm text-neutral-500 font-extralight leading-relaxed">Realiza tu pedido o reserva tu mesa directamente desde la interfaz.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mx-auto mb-6 text-sm font-light">3</div>
+                        <h3 class="text-xl font-light mb-4">Verifica</h3>
+                        <p class="text-sm text-neutral-500 font-extralight leading-relaxed">Escanea el código QR en el local para dejar una reseña auténtica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section id="features" class="border-t border-neutral-100">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 grid md:grid-cols-2 gap-20 items-start">
+                <div class="md:sticky md:top-20">
+                    <h2 class="text-3xl md:text-5xl font-thin tracking-tight leading-tight">
+                        Una app pensada<br>para ahorrar tiempo.
+                    </h2>
+                    <p class="mt-6 text-neutral-500 font-extralight max-w-sm">
+                        Hemos eliminado el ruido visual para que te centres en lo que importa: encontrar tu próxima comida favorita.
+                    </p>
+                </div>
+                <div class="divide-y divide-neutral-100">
+                    <div class="py-8 flex gap-8">
+                        <span class="text-xs font-light text-neutral-300 pt-2">01</span>
+                        <div>
+                            <h3 class="text-xl font-light">Búsqueda rápida</h3>
+                            <p class="mt-2 text-sm font-extralight text-neutral-500 leading-relaxed max-w-sm">Encuentra restaurantes cerca en segundos con filtros inteligentes.</p>
+                        </div>
+                    </div>
+                    <div class="py-8 flex gap-8">
+                        <span class="text-xs font-light text-neutral-300 pt-2">02</span>
+                        <div>
+                            <h3 class="text-xl font-light">Recomendaciones IA</h3>
+                            <p class="mt-2 text-sm font-extralight text-neutral-500 leading-relaxed max-w-sm">Sugerencias basadas en tus gustos reales y pedidos anteriores.</p>
+                        </div>
+                    </div>
+                    <div class="py-8 flex gap-8">
+                        <span class="text-xs font-light text-neutral-300 pt-2">03</span>
+                        <div>
+                            <h3 class="text-xl font-light">Reseñas verificadas</h3>
+                            <p class="mt-2 text-sm font-extralight text-neutral-500 leading-relaxed max-w-sm">Sistema mediante QR: solo pueden opinar quienes realmente han consumido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnología -->
+        <section id="tech" class="bg-neutral-900 text-white">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-thin tracking-tight leading-tight">
+                        Construido con Swift.<br>
+                        <span class="text-neutral-500">Nativo en iOS.</span>
+                    </h2>
+                </div>
+                <div class="space-y-8 text-neutral-300 font-extralight leading-relaxed">
+                    <p>Desarrollada con Swift y Xcode, utilizando tecnologías oficiales de Apple para garantizar el mejor rendimiento y estabilidad.</p>
+                    <p>Arquitectura modular que permite una evolución constante de la herramienta, adaptándose a las necesidades de la hostelería moderna.</p>
+                    <p>La integración con <span class="text-leaf">Mapas y Localización</span> asegura una experiencia de usuario fluida y precisa en todo momento.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Descarga en App Store -->
+        <section class="border-t border-neutral-100">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 py-24 md:py-32 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div>
+                    <p class="text-xs font-light tracking-[0.2em] uppercase text-neutral-400 mb-4">Disponible en</p>
+                    <h2 class="text-3xl md:text-5xl font-thin tracking-tight leading-tight">
+                        Descárgala gratis<br>
+                        <span class="text-leaf">en el App Store.</span>
+                    </h2>
+                    <p class="mt-6 text-neutral-500 font-extralight max-w-sm leading-relaxed">
+                        Disponible para iPhone. Descarga Prime Foodist y empieza a pedir con total comodidad.
+                    </p>
+                    <a href="https://www.apple.com/app-store/" target="_blank" class="inline-block mt-8 hover:opacity-70 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/250px-App_Store_%28iOS%29.svg.png" alt="Descargar en el App Store" class="h-14 w-auto">
+                    </a>
+                </div>
+                <div class="flex items-center gap-10 text-center">
+                    <div>
+                        <p class="text-4xl font-thin">iOS 16+</p>
+                        <p class="text-xs font-light text-neutral-400 mt-2 tracking-wide">Versión mínima</p>
+                    </div>
+                    <div class="h-12 w-px bg-neutral-100"></div>
+                    <div>
+                        <p class="text-4xl font-thin">Gratis</p>
+                        <p class="text-xs font-light text-neutral-400 mt-2 tracking-wide">Sin coste inicial</p>
+                    </div>
+                    <div class="h-12 w-px bg-neutral-100"></div>
+                    <div>
+                        <p class="text-4xl font-thin">ES</p>
+                        <p class="text-xs font-light text-neutral-400 mt-2 tracking-wide">Disponible en España</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section id="download" class="border-t border-neutral-100 bg-neutral-50/50">
+            <div class="max-w-4xl mx-auto px-6 md:px-10 py-32 text-center">
+                <!-- LOGO EN CTA -->
+                <img src="https://lh3.googleusercontent.com/d/14i6nHz3QhwcJXpfDAPT2Z4VP2Yv5t5Ff" alt="Logo" class="h-10 mx-auto mb-8">
+                <h2 class="text-4xl md:text-6xl font-thin tracking-tight leading-tight">Empieza a disfrutar.</h2>
+                <p class="mt-6 text-lg font-extralight text-neutral-500 max-w-md mx-auto">
+                    Próximamente disponible en App Store. Únete a la lista de espera.
+                </p>
+                <form class="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                    <input type="email" placeholder="tu@email.com" class="flex-1 px-6 py-3 rounded-full border border-neutral-200 bg-white text-sm font-light focus:outline-none focus:border-neutral-900 transition" required>
+                    <button type="submit" class="px-7 py-3 rounded-full bg-neutral-900 text-white text-sm font-light hover:bg-neutral-700 transition">
+                        Avísame
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-100">
+        <div class="max-w-6xl mx-auto px-6 md:px-10 py-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light text-neutral-400">
+            <div class="flex items-center gap-2 tracking-[0.2em] uppercase">
+                <!-- LOGO EN FOOTER -->
+                <img src="https://lh3.googleusercontent.com/d/14i6nHz3QhwcJXpfDAPT2Z4VP2Yv5t5Ff" alt="Logo" class="h-5 w-auto grayscale opacity-50 hover:opacity-100 transition">
+                <span>Prime Foodist</span>
+            </div>
+            <p>© 2024 Prime Foodist · Proyecto 2DAM</p>
+        </div>
+    </footer>
+
+</body>
+</html>
